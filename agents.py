@@ -18,3 +18,5 @@ class AgentState(MessagesState):
 @tool
 def get_weather(city: Literal["ahm", "surat"]):
     '''Use this to get weather information.'''
+    
+    return WeatherResponse()
