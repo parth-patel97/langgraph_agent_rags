@@ -18,10 +18,10 @@ class AgentState(MessagesState):
 @tool
 def get_weather(city: Literal["ahm", "surat"]):
     """Use this to get weather information."""
-    if city == "nyc":
-        return "It is cloudy in NYC, with 5 mph winds in the North-East direction and a temperature of 70 degrees"
-    elif city == "sf":
-        return "It is 75 degrees and sunny in SF, with 3 mph winds in the South-East direction"
+    if city == "ahm":
+        return "It is cloudy in Ahmedabad, with 5 mph winds in the North-East direction and a temperature of 70 degrees"
+    elif city == "surat":
+        return "It is 75 degrees and sunny in Surat, with 3 mph winds in the South-East direction"
     else:
         raise AssertionError("Unknown city")
     
