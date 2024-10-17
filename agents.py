@@ -31,3 +31,5 @@ model = ChatAnthropic(model="claude-3-opus-20240229")
     
 model_with_tools = model.bind_tools(tools)
 model_with_structured_output = model.with_structured_output(WeatherResponse)
+
+print(model_with_structured_output)
